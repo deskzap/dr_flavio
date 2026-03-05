@@ -99,6 +99,7 @@
                 <div class="hidden lg:flex items-center space-x-8">
                     <a href="#inicio" class="text-sm font-medium text-gray-300 hover:text-white transition">Início</a>
                     <a href="#sobre" class="text-sm font-medium text-gray-300 hover:text-white transition">Dr. Flávio</a>
+                    <a href="#clinica" class="text-sm font-medium text-gray-300 hover:text-white transition">A Clínica</a>
                     <a href="#especialidades" class="text-sm font-medium text-gray-300 hover:text-white transition">Especialidades</a>
                     <a href="#cirurgias" class="text-sm font-medium text-gray-300 hover:text-white transition">Cirurgias</a>
                     <a href="#exames" class="text-sm font-medium text-gray-300 hover:text-white transition">Exames</a>
@@ -217,6 +218,28 @@
                             <span>Especialização em Cirurgia Refrativa a laser.</span>
                         </li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- A Clínica -->
+    <section id="clinica" class="py-24 bg-medical relative overflow-hidden shadow-2xl z-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <span class="text-accents font-semibold tracking-wider text-sm uppercase bg-medical-dark bg-opacity-30 border border-medical-light px-4 py-1.5 rounded-full">Nosso Espaço</span>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6 mt-6">Estrutura Moderna e Acolhedora</h2>
+                    <p class="text-lg text-gray-300 font-light leading-relaxed mb-6">
+                        Consultório especializado em tratamentos e cirurgias oftalmológicas de alta complexidade. Contamos com um ambiente projetado para oferecer o máximo de conforto, segurança e bem-estar aos nossos pacientes no <strong>Instituto de Olhos de Vila Velha</strong> e em <strong>Aracruz-ES</strong>.
+                    </p>
+                    <p class="text-lg text-gray-300 font-light leading-relaxed border-l-4 border-accents pl-4 py-2 bg-medical-dark bg-opacity-40 rounded-r-xl">
+                        Atendimento humanizado aliado à mais avançada tecnologia diagnóstica e cirúrgica para a saúde da sua visão.
+                    </p>
+                </div>
+                <div class="order-1 lg:order-2 rounded-4xl overflow-hidden shadow-[0_10px_50px_rgba(72,201,176,0.15)] border border-medical-light relative group">
+                    <div class="absolute inset-0 bg-medical-dark opacity-10 group-hover:opacity-0 transition duration-500 z-10 pointer-events-none"></div>
+                    <img src="<?= base_url('uploads/clinica.jpg') ?>" alt="Recepção da Clínica" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-700">
                 </div>
             </div>
         </div>
@@ -400,6 +423,7 @@
                     <ul class="space-y-3 text-gray-400 font-light text-sm">
                         <li><a href="#inicio" class="hover:text-accents transition flex items-center"><i class="ph ph-caret-right mr-2"></i> Início</a></li>
                         <li><a href="#sobre" class="hover:text-accents transition flex items-center"><i class="ph ph-caret-right mr-2"></i> O Doutor</a></li>
+                        <li><a href="#clinica" class="hover:text-accents transition flex items-center"><i class="ph ph-caret-right mr-2"></i> A Clínica</a></li>
                         <li><a href="#especialidades" class="hover:text-accents transition flex items-center"><i class="ph ph-caret-right mr-2"></i> Especialidades</a></li>
                         <li><a href="#cirurgias" class="hover:text-accents transition flex items-center"><i class="ph ph-caret-right mr-2"></i> Cirurgias</a></li>
                         <li><a href="#exames" class="hover:text-accents transition flex items-center"><i class="ph ph-caret-right mr-2"></i> Exames</a></li>
