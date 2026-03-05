@@ -68,11 +68,24 @@
         }
 
         /* Hero Background */
+        @keyframes pulseIris {
+            0% { filter: brightness(1); transform: scale(1); }
+            100% { filter: brightness(1.3); transform: scale(1.05); }
+        }
+
         .hero-bg {
             background-color: #060B19;
-            background-image: linear-gradient(135deg, rgba(6,11,25,0.95) 0%, rgba(11,19,43,0.85) 100%), url('<?= base_url("uploads/hero_bg.png") ?>');
+        }
+
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: linear-gradient(135deg, rgba(6,11,25,0.95) 0%, rgba(11,19,43,0.75) 100%), url('<?= base_url("uploads/hero_bg.png") ?>');
             background-size: cover;
             background-position: center;
+            z-index: 0;
+            animation: pulseIris 6s infinite alternate ease-in-out;
         }
 
         /* Retina Banner */
