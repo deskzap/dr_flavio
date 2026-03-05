@@ -1,0 +1,49 @@
+ERROR - 2026-03-05 18:40:55 --> mysqli_sql_exception: Specified key was too long; max key length is 1000 bytes in C:\wamp64\www\dr-flavio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\wamp64\www\dr-flavio\system\Database\MySQLi\Connection.php(312): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\wamp64\www\dr-flavio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\wamp64\www\dr-flavio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\wamp64\www\dr-flavio\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\wamp64\www\dr-flavio\app\Database\Migrations\2026-03-05-183944_CreateInitialTables.php(21): CodeIgniter\Database\Forge->createTable('users', true)
+#5 C:\wamp64\www\dr-flavio\system\Database\MigrationRunner.php(867): App\Database\Migrations\CreateInitialTables->up()
+#6 C:\wamp64\www\dr-flavio\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\wamp64\www\dr-flavio\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\wamp64\www\dr-flavio\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\wamp64\www\dr-flavio\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\wamp64\www\dr-flavio\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 C:\wamp64\www\dr-flavio\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\wamp64\www\dr-flavio\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2026-03-05 18:41:51 --> mysqli_sql_exception: Specified key was too long; max key length is 1000 bytes in C:\wamp64\www\dr-flavio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\wamp64\www\dr-flavio\system\Database\MySQLi\Connection.php(312): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\wamp64\www\dr-flavio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\wamp64\www\dr-flavio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\wamp64\www\dr-flavio\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\wamp64\www\dr-flavio\app\Database\Migrations\2026-03-05-183944_CreateInitialTables.php(21): CodeIgniter\Database\Forge->createTable('users', true)
+#5 C:\wamp64\www\dr-flavio\system\Database\MigrationRunner.php(867): App\Database\Migrations\CreateInitialTables->up()
+#6 C:\wamp64\www\dr-flavio\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\wamp64\www\dr-flavio\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\wamp64\www\dr-flavio\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\wamp64\www\dr-flavio\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\wamp64\www\dr-flavio\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 C:\wamp64\www\dr-flavio\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\wamp64\www\dr-flavio\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2026-03-05 18:42:11 --> mysqli_sql_exception: Specified key was too long; max key length is 1000 bytes in C:\wamp64\www\dr-flavio\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\wamp64\www\dr-flavio\system\Database\MySQLi\Connection.php(312): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\wamp64\www\dr-flavio\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\wamp64\www\dr-flavio\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\wamp64\www\dr-flavio\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\wamp64\www\dr-flavio\app\Database\Migrations\2026-03-05-183944_CreateInitialTables.php(21): CodeIgniter\Database\Forge->createTable('users', true)
+#5 C:\wamp64\www\dr-flavio\system\Database\MigrationRunner.php(867): App\Database\Migrations\CreateInitialTables->up()
+#6 C:\wamp64\www\dr-flavio\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\wamp64\www\dr-flavio\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\wamp64\www\dr-flavio\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\wamp64\www\dr-flavio\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\wamp64\www\dr-flavio\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 C:\wamp64\www\dr-flavio\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\wamp64\www\dr-flavio\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+INFO - 2026-03-05 22:25:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
