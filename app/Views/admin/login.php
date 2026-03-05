@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body { background-color: #f0f4f8; }
-        .bg-medical { background-color: #0f4c81; }
+        .bg-medical { background-color: #16697A; }
     </style>
 </head>
 <body class="flex items-center justify-center min-h-screen">

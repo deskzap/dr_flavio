@@ -6,8 +6,8 @@
     <title><?= esc($title) ?></title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .bg-medical { background-color: #0f4c81; }
-        .text-medical { color: #0f4c81; }
+        .bg-medical { background-color: #16697A; }
+        .text-medical { color: #16697A; }
     </style>
 </head>
 <body class="bg-gray-100 flex h-screen overflow-hidden">

@@ -29,12 +29,12 @@
                     },
                     colors: {
                         medical: {
-                            light: '#4b88d3',
-                            DEFAULT: '#0f4c81', // Classic blue
-                            dark: '#082f53',
+                            light: '#4B8FA3',
+                            DEFAULT: '#16697A', // Azul petróleo
+                            dark: '#0F4C5C',
                         },
                         accents: {
-                            DEFAULT: '#2aa5a0',
+                            DEFAULT: '#48C9B0', // Verde-azulado sutil
                         }
                     }
                 }
@@ -63,12 +63,15 @@
 
         /* Hero Background with nice overlay */
         .hero-bg {
-            background-color: #0f4c81;
-            background-image: linear-gradient(135deg, rgba(8,47,83,0.95) 0%, rgba(15,76,129,0.85) 100%), url('<?= base_url("assets/images/hero_placeholder.jpg") ?>');
+            background-color: #16697A;
+            background-image: linear-gradient(135deg, rgba(15,76,92,0.95) 0%, rgba(22,105,122,0.85) 100%), url('<?= base_url("assets/images/hero_placeholder.jpg") ?>');
             background-size: cover;
             background-position: center;
         }
     </style>
+    
+    <!-- Particles.js para a animação orgânica -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 <body class="font-sans text-gray-800 antialiased bg-gray-50 selection:bg-medical selection:text-white">
 
@@ -203,15 +206,18 @@
 
     <!-- Sobre / Currículo -->
     <section id="sobre" class="py-20 bg-medical text-white relative overflow-hidden">
-        <!-- SVG Decorativo -->
-        <div class="absolute top-0 right-0 opacity-10 pointer-events-none">
+        <!-- Container das partículas orgânicas -->
+        <div id="particles-sobre" class="absolute inset-0 z-0 opacity-50 mix-blend-screen pointer-events-none"></div>
+
+        <!-- SVG Decorativo Original -->
+        <div class="absolute top-0 right-0 opacity-10 pointer-events-none z-0">
             <svg width="600" height="600" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                 <path fill="#ffffff" d="M47.7,-64.1C60.2,-55.8,67.6,-38.7,71.5,-21.5C75.3,-4.2,75.7,13.2,69.5,28.6C63.2,44,50.3,57.4,34.8,65.3C19.3,73.1,1.3,75.3,-14.8,71.4C-30.8,67.6,-44.9,57.7,-55.3,44.7C-65.7,31.7,-72.4,15.8,-73.4,-0.6C-74.4,-16.9,-69.6,-33.9,-58.5,-46.8C-47.4,-59.7,-30,-68.6,-13.1,-70.7C3.9,-72.8,24.8,-68.2,35.3,-72.4Z" transform="translate(100 100)" />
             </svg>
         </div>
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pointer-events-none">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center pointer-events-auto">
                 <!-- Foto do Doutor (Mockup / Espaço reservado, usa if para pegar do banco ou fallback vazio bonito) -->
                 <div class="hidden lg:flex justify-center relative">
                     <div class="absolute inset-0 bg-accents transform translate-x-4 translate-y-4 rounded-2xl opacity-50"></div>
@@ -321,7 +327,7 @@
         </div>
     </footer>
 
-    <!-- Script de Sanfona / Accordion -->
+    <!-- Script de Sanfona / Accordion e Particles -->
     <script>
         function toggleAccordion(element) {
             // Find content
@@ -343,6 +349,61 @@
                 }
             }
         }
+
+        // Inicialização do Particles.js (Animação Orgânica de Nós Interativos / Rede Neural da Visão)
+        document.addEventListener('DOMContentLoaded', function() {
+            if(document.getElementById('particles-sobre')) {
+                particlesJS("particles-sobre", {
+                    "particles": {
+                        "number": {
+                            "value": 60,
+                            "density": { "enable": true, "value_area": 800 }
+                        },
+                        "color": { "value": ["#ffffff", "#48C9B0"] },
+                        "shape": { "type": "circle" },
+                        "opacity": { 
+                            "value": 0.6, 
+                            "random": true,
+                            "anim": { "enable": true, "speed": 1, "opacity_min": 0.1, "sync": false }
+                        },
+                        "size": { 
+                            "value": 4, 
+                            "random": true,
+                            "anim": { "enable": true, "speed": 2, "size_min": 0.5, "sync": false }
+                        },
+                        "line_linked": {
+                            "enable": true,
+                            "distance": 150,
+                            "color": "#ffffff",
+                            "opacity": 0.3,
+                            "width": 1.2
+                        },
+                        "move": {
+                            "enable": true,
+                            "speed": 1.5,
+                            "direction": "none",
+                            "random": true,
+                            "straight": false,
+                            "out_mode": "out",
+                            "bounce": false,
+                        }
+                    },
+                    "interactivity": {
+                        "detect_on": "window", // Detecta na janela inteira para não ser bloqueado por z-index
+                        "events": {
+                            "onhover": { "enable": true, "mode": "grab" },
+                            "onclick": { "enable": true, "mode": "push" },
+                            "resize": true
+                        },
+                        "modes": {
+                            "grab": { "distance": 250, "line_linked": { "opacity": 0.8 } },
+                            "push": { "particles_nb": 4 }
+                        }
+                    },
+                    "retina_detect": true
+                });
+            }
+        });
     </script>
 </body>
 </html>
