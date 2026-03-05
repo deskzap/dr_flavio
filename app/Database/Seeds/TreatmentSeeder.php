@@ -52,12 +52,7 @@ class TreatmentSeeder extends Seeder
                 'category'    => 'cirurgia',
                 'order_index' => 7
             ],
-            [
-                'title'       => 'Fotocoagulação sublimiar laser',
-                'description' => 'Tratamento a laser para maculopatias da retina.',
-                'category'    => 'cirurgia',
-                'order_index' => 8
-            ],
+
             [
                 'title'       => 'Tratamento completo de Retinopatia diabética',
                 'description' => 'Acompanhamento e intervenções em pacientes diabéticos.',
@@ -95,12 +90,7 @@ class TreatmentSeeder extends Seeder
                 'category'    => 'exame',
                 'order_index' => 2
             ],
-            [
-                'title'       => 'Laudos médicos detalhados com CID',
-                'description' => 'Emissão de documentos e laudos precisos.',
-                'category'    => 'exame',
-                'order_index' => 3
-            ],
+
             [
                 'title'       => 'Mapeamento de Retina',
                 'description' => 'Exame detalhado do fundo do olho.',

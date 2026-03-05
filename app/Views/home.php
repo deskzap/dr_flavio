@@ -77,9 +77,9 @@
 
         /* Retina Banner */
         .retina-bg {
-            background-image: linear-gradient(to right, rgba(11,19,43,0.9), rgba(11,19,43,0.4)), url('<?= base_url("uploads/retina_bg.png") ?>');
+            background-image: linear-gradient(to right, rgba(11,19,43,0.95), rgba(6,11,25,0.7)), url('<?= base_url("uploads/retina_bg.png") ?>');
             background-size: cover;
-            background-position: right;
+            background-position: center;
         }
     </style>
     
@@ -99,6 +99,7 @@
                 <div class="hidden lg:flex items-center space-x-8">
                     <a href="#inicio" class="text-sm font-medium text-gray-300 hover:text-white transition">Início</a>
                     <a href="#sobre" class="text-sm font-medium text-gray-300 hover:text-white transition">Dr. Flávio</a>
+                    <a href="#especialidades" class="text-sm font-medium text-gray-300 hover:text-white transition">Especialidades</a>
                     <a href="#cirurgias" class="text-sm font-medium text-gray-300 hover:text-white transition">Cirurgias</a>
                     <a href="#exames" class="text-sm font-medium text-gray-300 hover:text-white transition">Exames</a>
                     <a href="<?= preg_match('/wa\.link/', $settings['whatsapp_number']) ? $settings['whatsapp_number'] : 'https://wa.me/55'.preg_replace('/[^0-9]/', '', $settings['whatsapp_number']) ?>" target="_blank" class="bg-accents text-medical-dark px-6 py-2.5 rounded-full text-sm font-bold hover:bg-white transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">Agendar Consulta</a>
@@ -137,26 +138,26 @@
         </div>
     </section>
 
-    <!-- Apresentação Rápida c/ Equipamento -->
+    <!-- Apresentação Clínica / Tratamento Premium -->
     <section class="py-20 bg-medical-dark relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div class="rounded-4xl overflow-hidden border border-medical-light shadow-2xl relative group">
                     <div class="absolute inset-0 bg-medical-dark opacity-20 group-hover:opacity-0 transition duration-500"></div>
-                    <img src="<?= base_url('uploads/equip.png') ?>" alt="Equipamentos Oftalmológicos Premium" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-700">
+                    <img src="<?= base_url('uploads/cirurgias.png') ?>" alt="Laser Oftalmológico Premium" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-700">
                 </div>
                 <div>
                     <h2 class="text-3xl font-bold text-white mb-6">Tratamento Premium e Atualizado</h2>
-                    <p class="text-xl text-gray-400 font-light leading-relaxed">
-                        Com mais de 10 anos de experiência médica em Oftalmologia, Dr. Flávio Gusmão Trancoso é referência no Espírito Santo em cirurgias de Catarata, Refrativa a laser e Retina. Combinando tecnologia alemã de altíssima precisão e atendimento humano diferenciado.
+                    <p class="text-lg md:text-xl text-gray-400 font-light leading-relaxed">
+                        Com mais de 10 anos de experiência médica em Oftalmologia, Dr. Flávio Gusmão Trancoso é referência no Espírito Santo em cirurgias de Catarata, Refrativa a laser e Retina.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sobre / Currículo (com Particles e Fundo Escuro Curvo) -->
-    <section id="sobre" class="py-24 bg-medical text-white relative overflow-hidden rounded-t-5xl lg:rounded-t-6xl rounded-b-5xl lg:rounded-b-6xl shadow-2xl border border-medical-light">
+    <!-- Sobre / Currículo (Particles e Fundo Curvo) -->
+    <section id="sobre" class="py-24 bg-medical text-white relative overflow-hidden rounded-t-5xl lg:rounded-t-6xl shadow-2xl border border-medical-light">
         <!-- Container das partículas orgânicas -->
         <div id="particles-sobre" class="absolute inset-0 z-0 opacity-40 mix-blend-screen pointer-events-none"></div>
 
@@ -178,16 +179,14 @@
                     <h2 class="text-3xl lg:text-4xl font-bold mb-4 text-white">Dr. Flávio Gusmão Trancoso</h2>
                     <p class="text-accents mb-8 font-medium">CRM/ES 12345 | RQE 6789</p>
                     
-                    <p class="text-gray-300 mb-8 italic light">"No Centro Brasileiro da Visão, em Brasília, o Dr. Flávio realizou fellow. Realizou milhares de procedimentos, cirurgias oftalmológicas, exames e atendimentos."</p>
-                    
                     <ul class="space-y-4 text-sm md:text-base font-light text-gray-200">
                         <li class="flex items-start">
                             <i class="ph-fill ph-check-circle text-accents mt-1 mr-3 shrink-0 text-xl"></i>
-                            <span>Graduação em Medicina em 2016</span>
+                            <span>Graduação em Medicina em 2016.</span>
                         </li>
                         <li class="flex items-start">
                             <i class="ph-fill ph-check-circle text-accents mt-1 mr-3 shrink-0 text-xl"></i>
-                            <span>Residência Médica em Oftalmologia no HEVV (credenciada por MEC e CBO) entre 2017 e 2020</span>
+                            <span>Residência Médica em Oftalmologia no HEVV (credenciada por MEC e CBO) entre 2017 e 2020.</span>
                         </li>
                         <li class="flex items-start">
                             <i class="ph-fill ph-check-circle text-accents mt-1 mr-3 shrink-0 text-xl"></i>
@@ -195,11 +194,23 @@
                         </li>
                         <li class="flex items-start">
                             <i class="ph-fill ph-check-circle text-accents mt-1 mr-3 shrink-0 text-xl"></i>
-                            <span>Título de Especialista pelo CBO, AMB e Ministério da Educação e Cultura (MEC).</span>
+                            <span>Título de Especialista pelo Conselho Brasileiro de Oftalmologia (CBO).</span>
                         </li>
                         <li class="flex items-start">
                             <i class="ph-fill ph-check-circle text-accents mt-1 mr-3 shrink-0 text-xl"></i>
-                            <span>Membro Titular da BRASCRS e da SBRV.</span>
+                            <span>Título de Especialista pela Associação Médica Brasileira (AMB).</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ph-fill ph-check-circle text-accents mt-1 mr-3 shrink-0 text-xl"></i>
+                            <span>Título de Especialista pelo Ministério da Educação e Cultura (MEC).</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ph-fill ph-check-circle text-accents mt-1 mr-3 shrink-0 text-xl"></i>
+                            <span>Membro Titular da BRASCRS (Associação Brasileira de Catarata e Cirurgia Refrativa).</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="ph-fill ph-check-circle text-accents mt-1 mr-3 shrink-0 text-xl"></i>
+                            <span>Membro titular da SBRV (Sociedade Brasileira de Retina e Vitreo).</span>
                         </li>
                         <li class="flex items-start">
                             <i class="ph-fill ph-check-circle text-accents mt-1 mr-3 shrink-0 text-xl"></i>
@@ -211,25 +222,67 @@
         </div>
     </section>
 
-    <!-- Cirurgias Realizadas (Dark UI Accordions) -->
-    <section id="cirurgias" class="py-24 bg-medical-dark retina-bg rounded-b-5xl lg:rounded-b-6xl border-b border-medical-light">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Especialidades / Áreas de Foco -->
+    <section id="especialidades" class="py-24 bg-medical-dark relative overflow-hidden rounded-b-5xl lg:rounded-b-6xl border-b border-medical-light shadow-2xl z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center flex-col-reverse md:flex-row">
+                <div class="order-2 md:order-1">
+                    <span class="text-accents font-semibold tracking-wider text-sm uppercase bg-medical-light bg-opacity-30 px-4 py-1.5 rounded-full border border-medical-light">Saúde Ocular</span>
+                    <h2 class="text-3xl font-bold mt-6 text-white mb-8">Especialidades e Cuidados Oculares</h2>
+                    
+                    <ul class="space-y-4 text-sm md:text-base font-light text-gray-300">
+                        <li class="bg-medical bg-opacity-30 border border-medical-light border-opacity-30 rounded-2xl p-5 flex items-center hover:bg-medical-light transition shadow-lg">
+                            <div class="w-12 h-12 rounded-full bg-medical text-accents flex items-center justify-center shrink-0 mr-4 border border-medical-light">
+                                <i class="ph-fill ph-eye px-1 text-2xl"></i>
+                            </div>
+                            <span class="font-medium text-white">Dermatocalaze e excesso de pele nas pálpebras</span>
+                        </li>
+                        <li class="bg-medical bg-opacity-30 border border-medical-light border-opacity-30 rounded-2xl p-5 flex items-center hover:bg-medical-light transition shadow-lg">
+                            <div class="w-12 h-12 rounded-full bg-medical text-accents flex items-center justify-center shrink-0 mr-4 border border-medical-light">
+                                <i class="ph-fill ph-target px-1 text-2xl"></i>
+                            </div>
+                            <span class="font-medium text-white">Correção de grau ocular com Cirurgia Refrativa a Laser</span>
+                        </li>
+                        <li class="bg-medical bg-opacity-30 border border-medical-light border-opacity-30 rounded-2xl p-5 flex items-center hover:bg-medical-light transition shadow-lg">
+                            <div class="w-12 h-12 rounded-full bg-medical text-accents flex items-center justify-center shrink-0 mr-4 border border-medical-light">
+                                <i class="ph-fill ph-sparkle px-1 text-2xl"></i>
+                            </div>
+                            <span class="font-medium text-white">Tratamentos avançados da Retina e Vítreo</span>
+                        </li>
+                        <li class="bg-medical bg-opacity-30 border border-medical-light border-opacity-30 rounded-2xl p-5 flex items-center hover:bg-medical-light transition shadow-lg">
+                            <div class="w-12 h-12 rounded-full bg-medical text-accents flex items-center justify-center shrink-0 mr-4 border border-medical-light">
+                                <i class="ph-fill ph-drop px-1 text-2xl"></i>
+                            </div>
+                            <span class="font-medium text-white">Cirurgia de Catarata Premium</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="order-1 md:order-2 rounded-4xl overflow-hidden border border-medical-light shadow-2xl relative group">
+                    <img src="<?= base_url('uploads/doencas.png') ?>" alt="Especialidades Oftalmológicas" class="w-full h-auto object-cover transform group-hover:scale-110 transition duration-700">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cirurgias Realizadas (Retina BG com Accordions Curvos) -->
+    <section id="cirurgias" class="py-24 bg-medical retina-bg relative shadow-2xl -mt-10 z-0">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
             <div class="text-center mb-16">
-                <span class="text-accents font-semibold tracking-wider text-sm uppercase bg-medical-light bg-opacity-30 px-4 py-1.5 rounded-full border border-medical-light">Tratamentos Cirúrgicos</span>
-                <h2 class="text-3xl font-bold mt-6 text-white">Procedimentos e Cirurgias</h2>
+                <span class="text-accents font-semibold tracking-wider text-sm uppercase bg-medical-dark bg-opacity-80 px-4 py-1.5 rounded-full border border-medical-light">Procedimentos</span>
+                <h2 class="text-3xl font-bold mt-6 text-white">Cirurgias Realizadas</h2>
             </div>
 
             <div class="space-y-4">
                 <?php if(!empty($surgeries)): ?>
                     <?php foreach($surgeries as $s): ?>
-                        <div class="bg-medical rounded-3xl border border-medical-light overflow-hidden cursor-pointer hover:bg-medical-light transition shadow-lg">
+                        <div class="bg-medical bg-opacity-95 backdrop-blur-md rounded-3xl border border-medical-light border-opacity-50 overflow-hidden cursor-pointer hover:bg-medical-light transition shadow-xl">
                             <div class="accordion-header p-6 flex justify-between items-center" onclick="toggleAccordion(this)">
                                 <h3 class="font-semibold text-lg text-white"><?= esc($s['title']) ?></h3>
-                                <div class="w-10 h-10 rounded-full bg-medical-dark text-accents flex items-center justify-center shrink-0 border border-medical-light">
+                                <div class="w-10 h-10 rounded-full bg-medical-dark text-accents flex items-center justify-center shrink-0 border border-medical-light border-opacity-50">
                                     <i class="ph ph-caret-down accordion-icon text-xl"></i>
                                 </div>
                             </div>
-                            <div class="accordion-content px-6 bg-medical-dark bg-opacity-30">
+                            <div class="accordion-content px-6 bg-medical-dark bg-opacity-50">
                                 <p class="text-gray-300 font-light pt-4 pb-2 border-t border-medical-light border-opacity-30"><?= esc($s['description']) ?></p>
                             </div>
                         </div>
@@ -242,37 +295,45 @@
     </section>
 
     <!-- Exames Realizados -->
-    <section id="exames" class="py-24 bg-medical">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <span class="text-accents font-semibold tracking-wider text-sm uppercase bg-medical-dark px-4 py-1.5 rounded-full border border-medical-light">Diagnóstico Avançado</span>
-                <h2 class="text-3xl font-bold mt-6 text-white">Exames Realizados</h2>
-            </div>
+    <section id="exames" class="py-24 bg-medical-dark border-b border-medical-light rounded-b-5xl lg:rounded-b-6xl relative z-10 shadow-2xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                
+                <div class="lg:col-span-4 lg:sticky lg:top-32">
+                    <span class="text-accents font-semibold tracking-wider text-sm uppercase bg-medical px-4 py-1.5 rounded-full border border-medical-light">Diagnóstico Avançado</span>
+                    <h2 class="text-3xl font-bold mt-6 text-white mb-6">Exames Realizados</h2>
+                    <p class="text-gray-400 font-light mb-10">Equipamentos de alta tecnologia que garantem a segurança e precisão em todos os diagnósticos dos nossos pacientes.</p>
+                    
+                    <div class="rounded-4xl overflow-hidden border border-medical-light shadow-2xl relative group hidden sm:block">
+                        <img src="<?= base_url('uploads/exames.png') ?>" alt="Lentes Oftalmológicas" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-700">
+                    </div>
+                </div>
 
-            <div class="space-y-4">
-                <?php if(!empty($exams)): ?>
-                    <?php foreach($exams as $e): ?>
-                        <div class="bg-medical-dark rounded-3xl border border-medical-light overflow-hidden cursor-pointer hover:bg-medical-light transition shadow-lg">
-                            <div class="accordion-header p-6 flex justify-between items-center" onclick="toggleAccordion(this)">
-                                <h3 class="font-medium text-lg text-white"><?= esc($e['title']) ?></h3>
-                                <div class="w-8 h-8 rounded-full bg-medical text-white flex items-center justify-center shrink-0 border border-medical-light">
-                                    <i class="ph ph-plus accordion-icon text-lg" data-icon="plus"></i>
+                <div class="lg:col-span-8 space-y-4">
+                    <?php if(!empty($exams)): ?>
+                        <?php foreach($exams as $e): ?>
+                            <div class="bg-medical rounded-3xl border border-medical-light overflow-hidden cursor-pointer hover:bg-medical-light transition shadow-lg">
+                                <div class="accordion-header p-5 flex justify-between items-center" onclick="toggleAccordion(this)">
+                                    <h3 class="font-medium text-lg text-white"><?= esc($e['title']) ?></h3>
+                                    <div class="w-8 h-8 rounded-full bg-medical-dark text-white flex items-center justify-center shrink-0 border border-medical-light">
+                                        <i class="ph ph-plus accordion-icon text-lg" data-icon="plus"></i>
+                                    </div>
+                                </div>
+                                <div class="accordion-content px-5 bg-medical-dark bg-opacity-30">
+                                    <p class="text-gray-400 font-light pt-4 pb-2 border-t border-medical-light border-opacity-30"><?= esc($e['description']) ?></p>
                                 </div>
                             </div>
-                            <div class="accordion-content px-6">
-                                <p class="text-gray-400 font-light pt-2 pb-2"><?= esc($e['description']) ?></p>
-                            </div>
-                        </div>
-                    <?php endforeach; ?>
-                <?php else: ?>
-                    <p class="text-center text-gray-500">Nenhum exame cadastrado.</p>
-                <?php endif; ?>
+                        <?php endforeach; ?>
+                    <?php else: ?>
+                        <p class="text-center text-gray-500">Nenhum exame cadastrado.</p>
+                    <?php endif; ?>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer / Contato (Dark UI Arredondado) -->
-    <footer id="contato" class="bg-medical-dark text-white pt-20 pb-8 rounded-t-5xl lg:rounded-t-6xl border-t border-medical-light mt-4 mx-2">
+    <footer id="contato" class="bg-medical-dark text-white pt-20 pb-8 rounded-t-5xl lg:rounded-t-6xl mt-4 mx-2">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12 border-b border-medical-light pb-12">
                 
@@ -294,7 +355,7 @@
                     <ul class="space-y-4 text-gray-300 font-light">
                         <li class="flex items-center">
                             <i class="ph-fill ph-envelope-simple text-accents text-xl mr-3 bg-medical-light p-2 rounded-full"></i>
-                            <?= esc($settings['email_contact'] ?? 'contato.clinicafgt@gmail.com') ?>
+                            <a href="mailto:<?= esc($settings['email_contact'] ?? 'contato.clinicafgt@gmail.com') ?>" class="hover:text-accents transition"><?= esc($settings['email_contact'] ?? 'contato.clinicafgt@gmail.com') ?></a>
                         </li>
                         <li class="flex items-start">
                             <i class="ph-fill ph-map-pin text-accents text-xl mr-3 mt-1 shrink-0 bg-medical-light p-2 rounded-full"></i>
@@ -314,13 +375,14 @@
                 </div>
 
                 <div>
-                    <h4 class="text-lg font-bold mb-6 border-l-2 border-accents pl-3">Links do Site</h4>
+                    <h4 class="text-lg font-bold mb-6 border-l-2 border-accents pl-3">Links Rápidos</h4>
                     <ul class="space-y-3 text-gray-400 font-light text-sm">
                         <li><a href="#inicio" class="hover:text-accents transition flex items-center"><i class="ph ph-caret-right mr-2"></i> Início</a></li>
                         <li><a href="#sobre" class="hover:text-accents transition flex items-center"><i class="ph ph-caret-right mr-2"></i> O Doutor</a></li>
+                        <li><a href="#especialidades" class="hover:text-accents transition flex items-center"><i class="ph ph-caret-right mr-2"></i> Especialidades</a></li>
                         <li><a href="#cirurgias" class="hover:text-accents transition flex items-center"><i class="ph ph-caret-right mr-2"></i> Cirurgias</a></li>
                         <li><a href="#exames" class="hover:text-accents transition flex items-center"><i class="ph ph-caret-right mr-2"></i> Exames</a></li>
-                        <li><a href="<?= base_url('admin/login') ?>" class="hover:text-accents transition text-medical-light font-medium mt-6 inline-flex items-center"><i class="ph ph-lock mr-2"></i> Área Restrita (Admin)</a></li>
+                        <li><a href="<?= base_url('admin/login') ?>" class="hover:text-accents transition text-medical-light font-medium mt-6 inline-flex items-center"><i class="ph ph-lock mr-2 text-lg"></i> Área Restrita</a></li>
                     </ul>
                 </div>
             </div>
