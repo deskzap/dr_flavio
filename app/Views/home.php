@@ -81,6 +81,31 @@
             background-size: cover;
             background-position: center;
         }
+
+        /* Parallax Backgrounds */
+        .parallax-dr-1 {
+            background-image: linear-gradient(rgba(6,11,25,0.85), rgba(11,19,43,0.92)), url('<?= base_url("assets/images/IMG_2283.jpeg") ?>');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .parallax-dr-2 {
+            background-image: linear-gradient(rgba(11,19,43,0.90), rgba(6,11,25,0.85)), url('<?= base_url("assets/images/IMG_3013.jpeg") ?>');
+            background-attachment: fixed;
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .parallax-dr-3 {
+            background-image: linear-gradient(rgba(6,11,25,0.82), rgba(6,11,25,0.82)), url('<?= base_url("assets/images/IMG_2550.jpeg") ?>');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     </style>
     
     <!-- Particles.js para a animação orgânica -->
@@ -141,7 +166,7 @@
     </section>
 
     <!-- Apresentação Clínica / Tratamento Premium -->
-    <section class="py-20 bg-medical-dark relative overflow-hidden">
+    <section class="py-24 parallax-dr-1 relative overflow-hidden shadow-2xl">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div class="rounded-4xl overflow-hidden border border-medical-light shadow-2xl relative group">
@@ -225,7 +250,7 @@
     </section>
 
     <!-- A Clínica -->
-    <section id="clinica" class="py-24 bg-medical relative overflow-hidden shadow-2xl z-20">
+    <section id="clinica" class="py-32 parallax-dr-2 relative overflow-hidden shadow-2xl z-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div class="order-2 lg:order-1">
@@ -339,8 +364,17 @@
         </div>
     </section>
 
+    <!-- Parallax Quote Divider -->
+    <section class="py-40 parallax-dr-3 relative shadow-2xl z-10 border-b border-medical-light rounded-b-5xl lg:rounded-b-6xl">
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10 flex flex-col items-center">
+            <i class="ph-fill ph-quotes text-5xl text-accents mb-6 opacity-80"></i>
+            <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6 leading-relaxed">A visão é um dos bens mais preciosos.<br> Cuidar dela com maestria é a nossa vocação.</h2>
+            <p class="text-gray-300 font-semibold tracking-widest uppercase text-sm">— Dr. Flávio Gusmão Trancoso</p>
+        </div>
+    </section>
+
     <!-- Exames Realizados -->
-    <section id="exames" class="py-24 bg-medical-dark border-b border-medical-light relative z-10 shadow-2xl">
+    <section id="exames" class="py-24 bg-medical border-b border-medical-light relative z-0 shadow-2xl">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
                 
