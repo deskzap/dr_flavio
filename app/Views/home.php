@@ -135,14 +135,35 @@
                     <span class="font-bold text-xl text-white tracking-tight">Dr. Flávio Gusmão</span>
                 </div>
                 <div class="hidden lg:flex items-center space-x-8">
-                    <a href="#inicio" class="text-sm font-medium text-gray-300 hover:text-white transition">Início</a>
-                    <a href="#sobre" class="text-sm font-medium text-gray-300 hover:text-white transition">Dr. Flávio</a>
-                    <a href="#clinica" class="text-sm font-medium text-gray-300 hover:text-white transition">A Clínica</a>
-                    <a href="#especialidades" class="text-sm font-medium text-gray-300 hover:text-white transition">Especialidades</a>
-                    <a href="#cirurgias" class="text-sm font-medium text-gray-300 hover:text-white transition">Cirurgias</a>
-                    <a href="#exames" class="text-sm font-medium text-gray-300 hover:text-white transition">Exames</a>
-                    <a href="#localizacao" class="text-sm font-medium text-gray-300 hover:text-white transition">Localização</a>
-                    <a href="<?= preg_match('/wa\.link/', $settings['whatsapp_number']) ? $settings['whatsapp_number'] : 'https://wa.me/55'.preg_replace('/[^0-9]/', '', $settings['whatsapp_number']) ?>" target="_blank" class="bg-accents text-medical-dark px-6 py-2.5 rounded-full text-sm font-bold hover:bg-white transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">Agendar Consulta</a>
+                    <a href="#inicio" class="text-sm font-semibold text-gray-300 hover:text-accents transition-all duration-300 hover:-translate-y-0.5 relative group">
+                        Início
+                        <span class="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-accents transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                    </a>
+                    <a href="#sobre" class="text-sm font-semibold text-gray-300 hover:text-accents transition-all duration-300 hover:-translate-y-0.5 relative group">
+                        Dr. Flávio
+                        <span class="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-accents transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                    </a>
+                    <a href="#clinica" class="text-sm font-semibold text-gray-300 hover:text-accents transition-all duration-300 hover:-translate-y-0.5 relative group">
+                        A Clínica
+                        <span class="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-accents transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                    </a>
+                    <a href="#especialidades" class="text-sm font-semibold text-gray-300 hover:text-accents transition-all duration-300 hover:-translate-y-0.5 relative group">
+                        Especialidades
+                        <span class="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-accents transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                    </a>
+                    <a href="#cirurgias" class="text-sm font-semibold text-gray-300 hover:text-accents transition-all duration-300 hover:-translate-y-0.5 relative group">
+                        Cirurgias
+                        <span class="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-accents transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                    </a>
+                    <a href="#exames" class="text-sm font-semibold text-gray-300 hover:text-accents transition-all duration-300 hover:-translate-y-0.5 relative group">
+                        Exames
+                        <span class="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-accents transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                    </a>
+                    <a href="#localizacao" class="text-sm font-semibold text-gray-300 hover:text-accents transition-all duration-300 hover:-translate-y-0.5 relative group">
+                        Localização
+                        <span class="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-accents transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                    </a>
+                    <a href="<?= preg_match('/wa\.link/', $settings['whatsapp_number']) ? $settings['whatsapp_number'] : 'https://wa.me/55'.preg_replace('/[^0-9]/', '', $settings['whatsapp_number']) ?>" target="_blank" class="bg-accents text-medical-dark px-6 py-2.5 rounded-full text-sm font-bold hover:bg-white transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105">Agendar Consulta</a>
                 </div>
             </div>
         </div>
@@ -197,7 +218,7 @@
     </section>
 
     <!-- Sobre / Currículo (Particles e Fundo Curvo) -->
-    <section id="sobre" class="py-24 bg-medical text-white relative overflow-hidden rounded-t-5xl lg:rounded-t-6xl shadow-2xl border border-medical-light">
+    <section id="sobre" class="scroll-mt-20 py-24 bg-medical text-white relative overflow-hidden rounded-t-5xl lg:rounded-t-6xl shadow-2xl border border-medical-light">
         <!-- Container das partículas orgânicas -->
         <div id="particles-sobre" class="absolute inset-0 z-0 opacity-40 mix-blend-screen pointer-events-none"></div>
 
@@ -263,7 +284,7 @@
     </section>
 
     <!-- A Clínica -->
-    <section id="clinica" class="py-32 parallax-dr-2 relative overflow-hidden shadow-2xl z-20">
+    <section id="clinica" class="scroll-mt-20 py-32 parallax-dr-2 relative overflow-hidden shadow-2xl z-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div class="order-2 lg:order-1">
@@ -285,7 +306,7 @@
     </section>
 
     <!-- Especialidades / Áreas de Foco (Layout Z-Pattern) -->
-    <section id="especialidades" class="py-24 bg-medical-dark relative overflow-hidden rounded-b-5xl lg:rounded-b-6xl border-b border-medical-light shadow-2xl z-10">
+    <section id="especialidades" class="scroll-mt-20 py-24 bg-medical-dark relative overflow-hidden rounded-b-5xl lg:rounded-b-6xl border-b border-medical-light shadow-2xl z-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center mb-20">
                 <span class="text-accents font-semibold tracking-wider text-sm uppercase bg-medical-light bg-opacity-30 px-4 py-1.5 rounded-full border border-medical-light">Expertise Cirúrgica</span>
@@ -348,7 +369,7 @@
     </section>
 
     <!-- Cirurgias Realizadas (Retina BG com Accordions Curvos) -->
-    <section id="cirurgias" class="py-24 bg-medical retina-bg relative shadow-2xl -mt-10 z-0">
+    <section id="cirurgias" class="scroll-mt-20 py-24 bg-medical retina-bg relative shadow-2xl -mt-10 z-0">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
             <div class="text-center mb-16">
                 <span class="text-accents font-semibold tracking-wider text-sm uppercase bg-medical-dark bg-opacity-80 px-4 py-1.5 rounded-full border border-medical-light">Procedimentos</span>
@@ -387,7 +408,7 @@
     </section>
 
     <!-- Exames Realizados -->
-    <section id="exames" class="py-24 bg-medical border-b border-medical-light relative z-0 shadow-2xl">
+    <section id="exames" class="scroll-mt-20 py-24 bg-medical border-b border-medical-light relative z-0 shadow-2xl">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
                 
@@ -425,7 +446,7 @@
     </section>
 
     <!-- Localização (Mapas Google) -->
-    <section id="localizacao" class="bg-medical bg-opacity-50 py-24 rounded-b-5xl lg:rounded-b-6xl border-b border-medical-light relative z-10 shadow-2xl">
+    <section id="localizacao" class="scroll-mt-20 bg-medical bg-opacity-50 py-24 rounded-b-5xl lg:rounded-b-6xl border-b border-medical-light relative z-10 shadow-2xl">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="mb-12">
                 <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6 flex items-center">
