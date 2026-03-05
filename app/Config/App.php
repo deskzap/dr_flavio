@@ -16,7 +16,29 @@ class App extends BaseConfig
      *
      * E.g., http://example.com/
      */
-    public string $baseURL = 'http://localhost:8080/';
+    public string $baseURL = 'http://localhost/';
+
+    public function __construct()
+    {
+        parent::__construct();
+
+        // Detecta dinamicamente a URL base baseando-se no host acessado
+        if (isset($_SERVER['HTTP_HOST'])) {
+            $protocol = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http');
+            $host = $_SERVER['HTTP_HOST'];
+            
+            // Para manter a detecção sensata caso o projeto não esteja na raiz
+            // Opcional: remover dependendo de como o Nginx for configurado, mas útil localmente
+            $scriptDir = str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME']));
+            if ($scriptDir === '/' || $scriptDir === '\\') {
+                $scriptDir = '';
+            }
+
+            // A baseURL se torna estritamente o host acessado + protocolo
+            // Como em produção apontaremos o Nginx direto pra /public, o scriptDir será nulo
+            $this->baseURL = $protocol . '://' . $host . $scriptDir . '/';
+        }
+    }
 
     /**
      * Allowed Hostnames in the Site URL other than the hostname in the baseURL.
