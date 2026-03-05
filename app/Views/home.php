@@ -632,5 +632,18 @@
             }
         });
     </script>
+    <!-- WhatsApp Floating Button -->
+    <?php
+        $waLink = preg_match('/wa\.link/', $settings['whatsapp_number']) ? $settings['whatsapp_number'] : 'https://wa.me/55'.preg_replace('/[^0-9]/', '', $settings['whatsapp_number']);
+    ?>
+    <a href="<?= $waLink ?>" target="_blank" class="fixed bottom-6 right-6 z-50 group flex items-center justify-center">
+        <!-- Animação de expansão (Ping) -->
+        <span class="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-60 animate-ping"></span>
+        <!-- Botão Principal -->
+        <div class="relative flex items-center justify-center bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full shadow-2xl transition-transform duration-300 group-hover:scale-110">
+            <i class="ph-fill ph-whatsapp-logo text-3xl"></i>
+        </div>
+    </a>
+
 </body>
 </html>
