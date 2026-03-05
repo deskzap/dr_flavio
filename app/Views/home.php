@@ -222,44 +222,65 @@
         </div>
     </section>
 
-    <!-- Especialidades / Áreas de Foco -->
+    <!-- Especialidades / Áreas de Foco (Layout Z-Pattern) -->
     <section id="especialidades" class="py-24 bg-medical-dark relative overflow-hidden rounded-b-5xl lg:rounded-b-6xl border-b border-medical-light shadow-2xl z-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center flex-col-reverse md:flex-row">
-                <div class="order-2 md:order-1">
-                    <span class="text-accents font-semibold tracking-wider text-sm uppercase bg-medical-light bg-opacity-30 px-4 py-1.5 rounded-full border border-medical-light">Saúde Ocular</span>
-                    <h2 class="text-3xl font-bold mt-6 text-white mb-8">Especialidades e Cuidados Oculares</h2>
-                    
-                    <ul class="space-y-4 text-sm md:text-base font-light text-gray-300">
-                        <li class="bg-medical bg-opacity-30 border border-medical-light border-opacity-30 rounded-2xl p-5 flex items-center hover:bg-medical-light transition shadow-lg">
-                            <div class="w-12 h-12 rounded-full bg-medical text-accents flex items-center justify-center shrink-0 mr-4 border border-medical-light">
-                                <i class="ph-fill ph-eye px-1 text-2xl"></i>
-                            </div>
-                            <span class="font-medium text-white">Dermatocalaze e excesso de pele nas pálpebras</span>
-                        </li>
-                        <li class="bg-medical bg-opacity-30 border border-medical-light border-opacity-30 rounded-2xl p-5 flex items-center hover:bg-medical-light transition shadow-lg">
-                            <div class="w-12 h-12 rounded-full bg-medical text-accents flex items-center justify-center shrink-0 mr-4 border border-medical-light">
-                                <i class="ph-fill ph-target px-1 text-2xl"></i>
-                            </div>
-                            <span class="font-medium text-white">Correção de grau ocular com Cirurgia Refrativa a Laser</span>
-                        </li>
-                        <li class="bg-medical bg-opacity-30 border border-medical-light border-opacity-30 rounded-2xl p-5 flex items-center hover:bg-medical-light transition shadow-lg">
-                            <div class="w-12 h-12 rounded-full bg-medical text-accents flex items-center justify-center shrink-0 mr-4 border border-medical-light">
-                                <i class="ph-fill ph-sparkle px-1 text-2xl"></i>
-                            </div>
-                            <span class="font-medium text-white">Tratamentos avançados da Retina e Vítreo</span>
-                        </li>
-                        <li class="bg-medical bg-opacity-30 border border-medical-light border-opacity-30 rounded-2xl p-5 flex items-center hover:bg-medical-light transition shadow-lg">
-                            <div class="w-12 h-12 rounded-full bg-medical text-accents flex items-center justify-center shrink-0 mr-4 border border-medical-light">
-                                <i class="ph-fill ph-drop px-1 text-2xl"></i>
-                            </div>
-                            <span class="font-medium text-white">Cirurgia de Catarata Premium</span>
-                        </li>
-                    </ul>
+            <div class="text-center mb-20">
+                <span class="text-accents font-semibold tracking-wider text-sm uppercase bg-medical-light bg-opacity-30 px-4 py-1.5 rounded-full border border-medical-light">Expertise Cirúrgica</span>
+                <h2 class="text-3xl font-bold mt-6 text-white mb-4">Especialidades e Tratamentos</h2>
+                <p class="text-gray-400 font-light max-w-2xl mx-auto text-lg hover:text-gray-300 transition">Soluções definitivas e tratamentos de alta complexidade com foco absoluto na segurança e na recuperação da sua qualidade de vida.</p>
+            </div>
+
+            <div class="space-y-24">
+                
+                <!-- Cirurgia Refrativa (Texto Direita / Imagem Esquerda) -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="rounded-4xl overflow-hidden shadow-[0_10px_50px_rgba(72,201,176,0.1)] border border-medical-light relative group order-2 lg:order-1">
+                        <img src="<?= base_url('uploads/esp_refrativa.png') ?>" alt="Cirurgia Refrativa a Laser" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-700">
+                    </div>
+                    <div class="order-1 lg:order-2">
+                        <h3 class="text-3xl lg:text-4xl font-bold text-white mb-6">Cirurgia Refrativa a Laser</h3>
+                        <p class="text-lg text-gray-300 font-light leading-relaxed mb-6">
+                            Liberdade visual com tecnologia de ponta. A cirurgia refrativa a laser é um procedimento moderno, preciso e seguro, indicado para quem deseja reduzir ou eliminar a dependência dos óculos e lentes de contato.
+                        </p>
+                        <p class="text-lg text-gray-300 font-light leading-relaxed">
+                            Sob os cuidados do Dr. Flávio, o paciente conta com avaliação criteriosa e acompanhamento personalizado, garantindo excelentes resultados visuais com máxima segurança, e riscos próximos a zero.
+                        </p>
+                    </div>
                 </div>
-                <div class="order-1 md:order-2 rounded-4xl overflow-hidden border border-medical-light shadow-2xl relative group">
-                    <img src="<?= base_url('uploads/doencas.png') ?>" alt="Especialidades Oftalmológicas" class="w-full h-auto object-cover transform group-hover:scale-110 transition duration-700">
+
+                <!-- Cirurgia de Catarata (Texto Esquerda / Imagem Direita) -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-3xl lg:text-4xl font-bold text-white mb-6">Cirurgia de Catarata</h3>
+                        <p class="text-lg text-gray-300 font-light leading-relaxed mb-6">
+                            Com mais de 5 mil cirurgias realizadas, o Dr. Flávio é referência em cirurgia de catarata. Utilizando técnicas avançadas e lentes intraoculares de última geração, proporciona a recuperação da visão, qualidade visual superior, e com significativa redução da necessidade de óculos.
+                        </p>
+                        <p class="text-lg text-gray-300 font-light leading-relaxed border-l-4 border-accents pl-4 py-2 bg-medical-light bg-opacity-20 rounded-r-xl">
+                            Sua experiência consolidada garante precisão, confiança e um cuidado diferenciado em cada procedimento.
+                        </p>
+                    </div>
+                    <div class="rounded-4xl overflow-hidden shadow-[0_10px_50px_rgba(72,201,176,0.1)] border border-medical-light relative group">
+                        <img src="<?= base_url('uploads/esp_catarata.png') ?>" alt="Cirurgia de Catarata" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-700">
+                    </div>
                 </div>
+
+                <!-- Retina (Texto Direita / Imagem Esquerda) -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="rounded-4xl overflow-hidden shadow-[0_10px_50px_rgba(72,201,176,0.1)] border border-medical-light relative group order-2 lg:order-1">
+                        <img src="<?= base_url('uploads/esp_retina.png') ?>" alt="Especialista em Retina" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-700">
+                    </div>
+                    <div class="order-1 lg:order-2">
+                        <h3 class="text-3xl lg:text-4xl font-bold text-white mb-6">Retina</h3>
+                        <p class="text-lg text-gray-300 font-light leading-relaxed mb-6">
+                            Especialista em doenças da retina, o Dr. Flávio é Retinólogo membro da Sociedade Brasileira de Retina e Vítreo, e possui formação sólida com especialização clínica e cirúrgica em Brasília (2020 - 2022), além da residência médica (2017 - 2020).
+                        </p>
+                        <p class="text-lg text-gray-300 font-light leading-relaxed">
+                            Atua no diagnóstico e tratamento completo das doenças retinianas. Seu olhar técnico, aliado a uma abordagem humana e atualizada, assegura tratamentos eficazes e resultados visuais satisfatórios para casos de alta complexidade.
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
