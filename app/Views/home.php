@@ -340,7 +340,7 @@
     </section>
 
     <!-- Exames Realizados -->
-    <section id="exames" class="py-24 bg-medical-dark border-b border-medical-light rounded-b-5xl lg:rounded-b-6xl relative z-10 shadow-2xl">
+    <section id="exames" class="py-24 bg-medical-dark border-b border-medical-light relative z-10 shadow-2xl">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
                 
@@ -372,6 +372,51 @@
                     <?php else: ?>
                         <p class="text-center text-gray-500">Nenhum exame cadastrado.</p>
                     <?php endif; ?>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Localização (Mapas Google) -->
+    <section id="localizacao" class="bg-medical bg-opacity-50 py-24 rounded-b-5xl lg:rounded-b-6xl border-b border-medical-light relative z-10 shadow-2xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6 flex items-center">
+                    <i class="ph-fill ph-map-pin text-accents text-4xl mr-4"></i> Localizações
+                </h2>
+                <div class="grid md:grid-cols-2 gap-8 text-lg font-light text-gray-300">
+                    <div>
+                        <p class="font-semibold text-white mb-2">Vitória - ES</p>
+                        <p><?= esc($settings['address_vitoria'] ?? 'R. Aluysio Simões, 134 – Bento Ferreira, 29050-632') ?></p>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-white mb-2">Aracruz - ES</p>
+                        <p><?= esc($settings['address_aracruz'] ?? 'Rua Fyori Terci, 174 – Vila Rica, 29194-176') ?></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 opacity-90 hover:opacity-100 transition duration-500">
+                <!-- Mapa Vitória -->
+                <div class="rounded-3xl overflow-hidden border border-medical-light shadow-xl bg-medical-dark h-[400px] relative">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3741.5649718449764!2d-40.301323324671406!3d-20.3182140811593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb83d5a4beabf6b%3A0x63cf5f8ceb09f4dd!2sR.%20Aluysio%20Sim%C3%B5es%2C%20134%20-%20Bento%20Ferreira%2C%20Vit%C3%B3ria%20-%20ES%2C%2029050-632!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+                        class="w-full h-full border-0 absolute top-0 left-0 mix-blend-luminosity filter hover:filter-none transition duration-700"
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+                <!-- Mapa Aracruz -->
+                <div class="rounded-3xl overflow-hidden border border-medical-light shadow-xl bg-medical-dark h-[400px] relative">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3753.3323087268804!2d-40.27431322468307!3d-19.825828481462066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb81ee1357597af%3A0xe5a1bdfd319e7674!2sR.%20Fyori%20Terci%2C%20174%20-%20Vila%20Rica%2C%20Aracruz%20-%20ES%2C%2029194-176!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+                        class="w-full h-full border-0 absolute top-0 left-0 mix-blend-luminosity filter hover:filter-none transition duration-700" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
             </div>
         </div>
