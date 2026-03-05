@@ -103,6 +103,7 @@
                     <a href="#especialidades" class="text-sm font-medium text-gray-300 hover:text-white transition">Especialidades</a>
                     <a href="#cirurgias" class="text-sm font-medium text-gray-300 hover:text-white transition">Cirurgias</a>
                     <a href="#exames" class="text-sm font-medium text-gray-300 hover:text-white transition">Exames</a>
+                    <a href="#localizacao" class="text-sm font-medium text-gray-300 hover:text-white transition">Localização</a>
                     <a href="<?= preg_match('/wa\.link/', $settings['whatsapp_number']) ? $settings['whatsapp_number'] : 'https://wa.me/55'.preg_replace('/[^0-9]/', '', $settings['whatsapp_number']) ?>" target="_blank" class="bg-accents text-medical-dark px-6 py-2.5 rounded-full text-sm font-bold hover:bg-white transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">Agendar Consulta</a>
                 </div>
             </div>
@@ -427,6 +428,7 @@
                         <li><a href="#especialidades" class="hover:text-accents transition flex items-center"><i class="ph ph-caret-right mr-2"></i> Especialidades</a></li>
                         <li><a href="#cirurgias" class="hover:text-accents transition flex items-center"><i class="ph ph-caret-right mr-2"></i> Cirurgias</a></li>
                         <li><a href="#exames" class="hover:text-accents transition flex items-center"><i class="ph ph-caret-right mr-2"></i> Exames</a></li>
+                        <li><a href="#localizacao" class="hover:text-accents transition flex items-center"><i class="ph ph-caret-right mr-2"></i> Localização</a></li>
                         <li><a href="<?= base_url('admin/login') ?>" class="hover:text-accents transition text-medical-light font-medium mt-6 inline-flex items-center"><i class="ph ph-lock mr-2 text-lg"></i> Área Restrita</a></li>
                     </ul>
                 </div>
