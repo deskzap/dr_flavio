@@ -24,7 +24,13 @@ class App extends BaseConfig
 
         // Detecta dinamicamente a URL base baseando-se no host acessado
         if (isset($_SERVER['HTTP_HOST'])) {
-            $protocol = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http');
+            // Verifica se está atrás de proxy (Traefik/Cloudflare) para forçar HTTPS corretamente
+            $protocol = 'http';
+            if ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') || 
+                (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https')) {
+                $protocol = 'https';
+            }
+            
             $host = $_SERVER['HTTP_HOST'];
             
             // Para manter a detecção sensata caso o projeto não esteja na raiz
