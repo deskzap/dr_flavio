@@ -228,7 +228,7 @@
                 <div class="hidden lg:flex justify-center relative">
                     <div class="absolute inset-0 bg-accents transform translate-x-4 translate-y-4 rounded-4xl opacity-20 blur-sm"></div>
                     <?php if(!empty($profile['profile_image_path'])): ?>
-                        <img src="<?= base_url('uploads/' . $profile['profile_image_path']) ?>" alt="Dr. Flávio Gusmão" class="rounded-4xl shadow-2xl relative z-10 w-full max-w-md object-cover border-2 border-medical-light">
+                        <img src="https://drflavio.deskzap.com.br/public/assets/images/IMG_2867.jpeg<?= base_url('uploads/' . $profile['profile_image_path']) ?>" alt="Dr. Flávio Gusmão" class="rounded-4xl shadow-2xl relative z-10 w-full max-w-md object-cover border-2 border-medical-light">
                     <?php else: ?>
                         <div class="rounded-4xl shadow-2xl relative z-10 w-full max-w-md h-96 bg-medical-dark flex items-center justify-center border-2 border-medical-light text-medical-light">
                             <i class="ph-fill ph-user text-8xl opacity-50"></i>
