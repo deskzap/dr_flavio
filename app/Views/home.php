@@ -199,16 +199,16 @@
         </div>
     </section>
 
-    <!-- Apresentação Clínica / Tratamento Premium -->
+    <!-- Apresentação Clínica / Tratamento Especializado -->
     <section class="py-24 parallax-dr-1 relative overflow-hidden shadow-2xl">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div class="rounded-4xl overflow-hidden border border-medical-light shadow-2xl relative group">
                     <div class="absolute inset-0 bg-medical-dark opacity-20 group-hover:opacity-0 transition duration-500"></div>
-                    <img src="<?= base_url('uploads/cirurgias.png') ?>" alt="Laser Oftalmológico Premium" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-700">
+                    <img src="<?= base_url('assets/images/atendentes.jpg') ?>" alt="Atendimento Especializado" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-700">
                 </div>
                 <div>
-                    <h2 class="text-3xl font-bold text-white mb-6">Tratamento Premium e Atualizado</h2>
+                    <h2 class="text-3xl font-bold text-white mb-6">Tratamento Especializado e Atualizado</h2>
                     <p class="text-lg md:text-xl text-gray-400 font-light leading-relaxed">
                         Com mais de 10 anos de experiência médica em Oftalmologia, Dr. Flávio Gusmão Trancoso é referência no Espírito Santo em cirurgias de Catarata, Refrativa a laser e Retina.
                     </p>
@@ -228,7 +228,7 @@
                 <div class="hidden lg:flex justify-center relative">
                     <div class="absolute inset-0 bg-accents transform translate-x-4 translate-y-4 rounded-4xl opacity-20 blur-sm"></div>
                     <?php if(!empty($profile['profile_image_path'])): ?>
-                        <img src="<?= base_url('uploads/' . $profile['profile_image_path']) ?>" alt="Dr. Flávio Gusmão" class="rounded-4xl shadow-2xl relative z-10 w-full max-w-md object-cover border-2 border-medical-light">
+                        <img src="<?= base_url('assets/images/IMG_2283.jpeg') ?>" alt="Dr. Flávio Gusmão" class="rounded-4xl shadow-2xl relative z-10 w-full max-w-md aspect-square object-cover border-2 border-medical-light">
                     <?php else: ?>
                         <div class="rounded-4xl shadow-2xl relative z-10 w-full max-w-md h-96 bg-medical-dark flex items-center justify-center border-2 border-medical-light text-medical-light">
                             <i class="ph-fill ph-user text-8xl opacity-50"></i>
@@ -238,7 +238,7 @@
 
                 <div class="bg-medical-dark bg-opacity-80 p-8 rounded-4xl border border-medical-light backdrop-blur-md shadow-2xl">
                     <h2 class="text-3xl lg:text-4xl font-bold mb-4 text-white">Dr. Flávio Gusmão Trancoso</h2>
-                    <p class="text-accents mb-8 font-medium">CRM/ES 12345 | RQE 6789</p>
+                    <p class="text-accents mb-8 font-medium">CRM-ES 14486 | RQE 12665</p>
                     
                     <ul class="space-y-4 text-sm md:text-base font-light text-gray-200">
                         <li class="flex items-start">
@@ -247,7 +247,7 @@
                         </li>
                         <li class="flex items-start">
                             <i class="ph-fill ph-check-circle text-accents mt-1 mr-3 shrink-0 text-xl"></i>
-                            <span>Residência Médica em Oftalmologia no HEVV (credenciada por MEC e CBO) entre 2017 e 2020.</span>
+                            <span>Residência Médica em Oftalmologia no HEVV (Hospital Evangélico de Vila Velha), credenciada por MEC e CBO, entre 2017 e 2020.</span>
                         </li>
                         <li class="flex items-start">
                             <i class="ph-fill ph-check-circle text-accents mt-1 mr-3 shrink-0 text-xl"></i>
@@ -271,7 +271,7 @@
                         </li>
                         <li class="flex items-start">
                             <i class="ph-fill ph-check-circle text-accents mt-1 mr-3 shrink-0 text-xl"></i>
-                            <span>Membro titular da SBRV (Sociedade Brasileira de Retina e Vitreo).</span>
+                            <span>Membro Titular da SBRV (Sociedade Brasileira de Retina e Vitreo).</span>
                         </li>
                         <li class="flex items-start">
                             <i class="ph-fill ph-check-circle text-accents mt-1 mr-3 shrink-0 text-xl"></i>
@@ -284,6 +284,7 @@
     </section>
 
     <!-- A Clínica -->
+    <!-- A Clínica (Oculto temporariamente a pedido do cliente)
     <section id="clinica" class="scroll-mt-20 py-32 parallax-dr-2 relative overflow-hidden shadow-2xl z-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -304,6 +305,7 @@
             </div>
         </div>
     </section>
+    -->
 
     <!-- Especialidades / Áreas de Foco (Layout Z-Pattern) -->
     <section id="especialidades" class="scroll-mt-20 py-24 bg-medical-dark relative overflow-hidden rounded-b-5xl lg:rounded-b-6xl border-b border-medical-light shadow-2xl z-10">
@@ -319,15 +321,19 @@
                 <!-- Cirurgia Refrativa (Texto Direita / Imagem Esquerda) -->
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div class="rounded-4xl overflow-hidden shadow-[0_10px_50px_rgba(72,201,176,0.1)] border border-medical-light relative group order-2 lg:order-1">
-                        <img src="<?= base_url('uploads/esp_refrativa.png') ?>" alt="Cirurgia Refrativa a Laser" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-700">
+                        <img src="<?= base_url('assets/images/refrativa_laser.jpg') ?>" alt="Cirurgia Refrativa a Laser" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-700">
                     </div>
                     <div class="order-1 lg:order-2">
                         <h3 class="text-3xl lg:text-4xl font-bold text-white mb-6">Cirurgia Refrativa a Laser</h3>
                         <p class="text-lg text-gray-300 font-light leading-relaxed mb-6">
-                            Liberdade visual com tecnologia de ponta. A cirurgia refrativa a laser é um procedimento moderno, preciso e seguro, indicado para quem deseja reduzir ou eliminar a dependência dos óculos e lentes de contato.
+                            Dr. Flávio é especializado em Cirurgia Refrativa a Laser. <br>
+                            Liberdade visual alinhada com tecnologia de ponta.
+                        </p>
+                        <p class="text-lg text-gray-300 font-light leading-relaxed mb-6">
+                            A cirurgia refrativa a laser é um procedimento moderno, preciso e seguro, indicado para quem deseja reduzir ou eliminar a dependência dos óculos e lentes de contato.
                         </p>
                         <p class="text-lg text-gray-300 font-light leading-relaxed">
-                            Sob os cuidados do Dr. Flávio, o paciente conta com avaliação criteriosa e acompanhamento personalizado, garantindo excelentes resultados visuais com máxima segurança, e riscos próximos a zero.
+                            O paciente conta com avaliação criteriosa e acompanhamento personalizado, garantindo excelentes resultados visuais com máxima segurança.
                         </p>
                     </div>
                 </div>
@@ -344,23 +350,42 @@
                         </p>
                     </div>
                     <div class="rounded-4xl overflow-hidden shadow-[0_10px_50px_rgba(72,201,176,0.1)] border border-medical-light relative group">
-                        <img src="<?= base_url('uploads/esp_catarata.png') ?>" alt="Cirurgia de Catarata" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-700">
+                        <img src="<?= base_url('assets/images/quando-operar-catarata.jpg') ?>" alt="Cirurgia de Catarata" class="w-full h-auto aspect-square object-cover transform group-hover:scale-105 transition duration-700">
                     </div>
                 </div>
 
                 <!-- Retina (Texto Direita / Imagem Esquerda) -->
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div class="rounded-4xl overflow-hidden shadow-[0_10px_50px_rgba(72,201,176,0.1)] border border-medical-light relative group order-2 lg:order-1">
-                        <img src="<?= base_url('uploads/esp_retina.png') ?>" alt="Especialista em Retina" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-700">
+                        <img src="<?= base_url('assets/images/retina.jpg') ?>" alt="Especialista em Retina" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-700">
                     </div>
                     <div class="order-1 lg:order-2">
                         <h3 class="text-3xl lg:text-4xl font-bold text-white mb-6">Retina</h3>
                         <p class="text-lg text-gray-300 font-light leading-relaxed mb-6">
-                            Especialista em doenças da retina, o Dr. Flávio é Retinólogo membro da Sociedade Brasileira de Retina e Vítreo, e possui formação sólida com especialização clínica e cirúrgica em Brasília (2020 - 2022), além da residência médica (2017 - 2020).
+                            Especialista em doenças da Retina e Vítreo, o Dr. Flávio é Retinólogo Membro Titular da Sociedade Brasileira de Retina e Vítreo, e possui formação sólida com Especialização de Retina Clínica e Cirúrgica pelo Centro Brasileiro da Visão, em Brasília-DF (2020 - 2022).
                         </p>
                         <p class="text-lg text-gray-300 font-light leading-relaxed">
                             Atua no diagnóstico e tratamento completo das doenças retinianas. Seu olhar técnico, aliado a uma abordagem humana e atualizada, assegura tratamentos eficazes e resultados visuais satisfatórios para casos de alta complexidade.
                         </p>
+                    </div>
+                </div>
+
+                <!-- Pterígio (Texto Esquerda / Imagem Direita) -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-3xl lg:text-4xl font-bold text-white mb-6">Cirurgia de Pterígio</h3>
+                        <p class="text-xl text-accents font-semibold mb-4 italic">
+                            A “carninha” crescendo no seu olho está incomodando?
+                        </p>
+                        <p class="text-lg text-gray-300 font-light leading-relaxed mb-6">
+                            Ela arde, coça, incomoda… e pode crescer ainda mais. A boa notícia? Você não precisa ir para longe para resolver isso.
+                        </p>
+                        <p class="text-lg text-gray-300 font-light leading-relaxed border-l-4 border-accents pl-4 py-2 bg-medical-light bg-opacity-20 rounded-r-xl">
+                            Operamos cirurgia de pterígio em Vitória - ES, na R. Aluysio Simões, 134 – Bento Ferreira, Vitória – ES, 29050-632.
+                        </p>
+                    </div>
+                    <div class="rounded-4xl overflow-hidden shadow-[0_10px_50px_rgba(72,201,176,0.1)] border border-medical-light relative group">
+                        <img src="<?= base_url('assets/images/mancha-carne.png') ?>" alt="Cirurgia de Pterígio" class="w-full h-auto aspect-square object-cover transform group-hover:scale-105 transition duration-700">
                     </div>
                 </div>
 
@@ -418,7 +443,7 @@
                     <p class="text-gray-400 font-light mb-10">Equipamentos de alta tecnologia que garantem a segurança e precisão em todos os diagnósticos dos nossos pacientes.</p>
                     
                     <div class="rounded-4xl overflow-hidden border border-medical-light shadow-2xl relative group hidden sm:block">
-                        <img src="<?= base_url('uploads/exames.png') ?>" alt="Lentes Oftalmológicas" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-700">
+                        <img src="<?= base_url('assets/images/IMG_2867.jpeg') ?>" alt="Exames Oftalmológicos" class="w-full h-auto aspect-square object-cover transform group-hover:scale-105 transition duration-700">
                     </div>
                 </div>
 
