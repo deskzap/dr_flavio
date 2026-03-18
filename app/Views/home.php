@@ -205,7 +205,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div class="rounded-4xl overflow-hidden border border-medical-light shadow-2xl relative group">
                     <div class="absolute inset-0 bg-medical-dark opacity-20 group-hover:opacity-0 transition duration-500"></div>
-                    <img src="<?= base_url('assets/images/atendentes.jpg') ?>" alt="Atendimento Especializado" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-700">
+                    <img src="<?= base_url('assets/images/atendentes.jpeg') ?>" alt="Atendimento Especializado" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-700">
                 </div>
                 <div>
                     <h2 class="text-3xl font-bold text-white mb-6">Tratamento Especializado e Atualizado</h2>
@@ -350,7 +350,7 @@
                         </p>
                     </div>
                     <div class="rounded-4xl overflow-hidden shadow-[0_10px_50px_rgba(72,201,176,0.1)] border border-medical-light relative group">
-                        <img src="<?= base_url('assets/images/quando-operar-catarata.jpg') ?>" alt="Cirurgia de Catarata" class="w-full h-auto aspect-square object-cover transform group-hover:scale-105 transition duration-700">
+                        <img src="<?= base_url('assets/images/medica-maquina.jpeg') ?>" alt="Cirurgia de Catarata" class="w-full h-auto aspect-square object-cover transform group-hover:scale-105 transition duration-700">
                     </div>
                 </div>
 
