@@ -484,7 +484,11 @@
                     </div>
                     <div>
                         <p class="font-semibold text-white mb-2">Aracruz - ES</p>
-                        <p><?= esc($settings['address_aracruz'] ?? 'Rua Fyori Terci, 174 – Vila Rica, 29194-176') ?></p>
+                        <p><?= nl2br(esc($settings['address_aracruz'] ?? "Clínica Intermédica (segundo andar, consultório oftalmológico)\nRua Napoleão Nunes Ribeiro dos Santos, 130 - Centro, Aracruz - ES, 29190-026")) ?></p>
+                        <div class="mt-3 space-y-1">
+                            <p class="flex items-center text-gray-300"><i class="ph-fill ph-phone mr-2 text-accents"></i> (27) 99583-6713</p>
+                            <p class="flex items-center text-gray-300"><i class="ph-fill ph-whatsapp-logo mr-2 text-green-500"></i> (27) 99832-8484</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -504,7 +508,7 @@
                 <!-- Mapa Aracruz -->
                 <div class="rounded-3xl overflow-hidden border border-medical-light shadow-xl bg-medical-dark h-[400px] relative">
                     <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3753.3323087268804!2d-40.27431322468307!3d-19.825828481462066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb81ee1357597af%3A0xe5a1bdfd319e7674!2sR.%20Fyori%20Terci%2C%20174%20-%20Vila%20Rica%2C%20Aracruz%20-%20ES%2C%2029194-176!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116244.52445853523!2d-40.237435136868666!3d-19.825227181057864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb81ed9db7a956d%3A0xe5eb9709ced6bead!2sCl%C3%ADnica%20Interm%C3%A9dica!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
                         class="w-full h-full border-0 absolute top-0 left-0 mix-blend-luminosity filter hover:filter-none transition duration-700" 
                         allowfullscreen="" 
                         loading="lazy" 
@@ -551,7 +555,11 @@
                             <i class="ph-fill ph-map-pin text-accents text-xl mr-3 mt-1 shrink-0 bg-medical-light p-2 rounded-full"></i>
                             <div>
                                 <span class="block text-white font-medium mb-1">Aracruz - ES</span>
-                                <?= esc($settings['address_aracruz'] ?? 'Rua Fyori Terci, 174 – Vila Rica, 29194-176') ?>
+                                <?= nl2br(esc($settings['address_aracruz'] ?? "Clínica Intermédica (segundo andar, consultório oftalmológico)\nRua Napoleão Nunes Ribeiro dos Santos, 130 - Centro, Aracruz - ES, 29190-026")) ?>
+                                <div class="mt-3 space-y-1 text-sm">
+                                    <p class="flex items-center text-gray-400 hover:text-white transition"><i class="ph-fill ph-phone mr-2 text-accents"></i> (27) 99583-6713</p>
+                                    <p class="flex items-center text-gray-400 hover:text-white transition"><i class="ph-fill ph-whatsapp-logo mr-2 text-green-500"></i> (27) 99832-8484</p>
+                                </div>
                             </div>
                         </li>
                     </ul>

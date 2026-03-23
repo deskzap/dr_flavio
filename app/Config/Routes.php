@@ -16,4 +16,7 @@ $routes->group('admin', function($routes) {
 
     // Dashboard (Protegido pelo construtor do BaseAdminController)
     $routes->get('/', 'Admin\DashboardController::index');
+    
+    // Migrações do Banco de Dados
+    $routes->get('migrate', 'Admin\DashboardController::migrate');
 });
